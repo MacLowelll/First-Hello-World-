@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title>Example</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* body {
+    background-color: cyan;
+} */
+h1{
+    color:blue;
+    font-family: "Roboto", sans-serif;
+}
+.example {
+    color:aquamarine;
+    font-size:50px;
+    margin-top:100px;
+}
+.divclass p {
+    display: inline-block;
+    margin:0;
+}
+#colorbutton{
+    background-color: aquamarine;
+    color:aliceblue;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px; 
+}
+#colorbutton:hover{ background-color: rgb(0, 0, 0);}
+
+</style>
+</head>
+<body>
+  <h1>Example Website</h1>
+<p class="example">This is a ap</p>
+<div class="divclass123"> 
+<p>welcome to my website</p>
+<p class="example">This is a ap</p>
+</div>
+<p>This is a ap</p>
+<p>This is a ap</p>
+
+  <button id="colorbutton">
+    Changue color
+  </button>
+<script>
+var button = document.getElementById("colorbutton");
+
+button.addEventListener("click", function(){
+    var randomColor = "#" + Math.floor(Math.random()*1677787).toString(16);
+    button.style.backgroundColor = randomColor;
+});
+button.addEventListener("mouseover", function(){
+button.style.backgroundColor= "blue"});
+</script>
+</body>
+</html>
